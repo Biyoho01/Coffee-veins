@@ -1,0 +1,812 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+html {
+    font-size: 62.5%;
+    
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+    
+    margin: 0;
+}
+
+
+
+body {
+    color: #3a2f29;
+    background-image: url("bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.5); /* White color with 0.5 opacity */
+}
+
+
+
+
+.heading {
+    font-size: 9rem;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: .05rem var(--main-color);
+    letter-spacing: .2rem;
+    text-align: center;
+    pointer-events: none;
+    position: relative;
+}
+
+.heading span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    color: var(--main-color);
+    font-size: 3rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: .9rem 1.5rem;
+    border: var(--border);
+    
+    color: var(--main-color);
+    background: none;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 1.7rem;
+}
+
+
+
+/* HEADER */
+.logo {
+    display: flex;
+    align-items: center;
+    margin-right: 10%;
+  }
+  
+  .logo-image {
+    
+    width: 100px; /* Adjust the width of the logo image */
+    height: auto; /* Maintain the aspect ratio */
+    margin-left: 10px; /* Adjust the spacing between the image and text */
+  }
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    
+    justify-content: space-between;
+    z-index: 1000;
+    background: #fdfce9;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    padding-right: 2rem 9%;
+    padding-left: 5%;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    padding-right: 5%;
+    
+}
+
+.header .p{
+    letter-spacing: 10px;
+}
+
+.header .logo {
+    color: var(--main-color);
+    font-size: 2.3rem;
+    
+}
+
+.header .logo p {
+    padding-left: 0;
+}
+
+.header .navbar a {
+    margin: 0 1rem;
+    font-weight: 400;
+    font-size: 1.7rem;
+    color: var(--main-color);
+}
+
+
+
+
+
+#menu-btn {
+    font-size: 3rem;
+    color: var(--main-color);
+    cursor: pointer;
+    display: none;
+}
+.fot{
+    
+}
+.footer {
+    box-sizing: border-box;
+    background-color: #fdfce9;
+    color: #000;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    margin-top: auto;
+    text-decoration: none;
+    font-size: 150%;
+    z-index: 1;
+    margin-top: 3%;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .3);
+    
+}
+
+.footer p{
+    text-decoration: none;
+}
+.footer a{
+    color: #3a2f29; 
+    text-decoration: none;
+}
+
+.intro {
+    margin-top: 220px;
+    margin-inline: 5%;
+    text-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    font-size: larger;
+    display: flex;
+    justify-content: space-between; /* Adjust as needed */
+    z-index: 0;
+
+}
+
+.intro2 {
+    background-color: rgb(255, 255, 255);
+    z-index: 0;
+    margin-top: 1%;
+    margin-inline: 0%;
+    text-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    font-size: larger;
+    display: flex;
+    justify-content: space-between; 
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .3);
+}
+
+.text1 {
+    flex: 1; /* Takes up available space */
+    padding-right: 20px; /* Adjust as needed for spacing between text and image */
+    font-size:250%;
+    z-index: 1;
+    
+    
+}
+
+.text2 {
+    flex: 1; /* Takes up available space */
+    padding-right: 10px; /* Adjust as needed for spacing between text and image */
+    font-size: 250%;
+    z-index: 1;
+   text-align: right;
+   margin: 5%;
+}
+
+
+
+.img1 img {
+    max-width: 100%;
+    filter:drop-shadow(0px 0px 10px rgba(0,0, 0, 0.5));
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+    animation: hoverAnimation 1s infinite alternate; /* Apply the animation every 1 second */
+}
+
+@keyframes hoverAnimation {
+    0% {
+        transform: translateY(0) rotateX(0deg);
+    }
+    100% {
+        transform: translateY(-15px) rotateX(3deg);
+    }
+}
+
+.img2 img {
+    
+    max-width: auto;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+    animation: hoverAnimation 1s infinite alternate; /* Apply the animation every 1 second */
+    align-items: left;
+    margin-left: 5%;
+    z-index: 1;
+    filter:drop-shadow(0px 0px 10px rgba(0,0, 0, 0.5));
+}
+
+@keyframes hoverAnimation {
+    10% {
+        transform: translateY(0) rotateX(0deg);
+    }
+    100% {
+        transform: translateY(-20px) rotateX(10deg);
+    }
+}
+
+.btn {
+    
+    
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #382f1e;
+    color: #ffffff;
+    border-radius: 20px;
+    transition: background-color 0.3s ease-in-out;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    margin-right: 0%;
+    margin-top: 5%;
+    max-width: 270px;
+}
+
+/* Hover effect */
+.btn:hover {
+    background-color: #c4b5a8;
+    border-radius: 20px;
+    z-index: 1;
+}
+
+.icons-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    z-index: 1;
+}
+
+.icons-container .icons {
+    flex: 1 1 15rem;
+    padding: 1.5rem;
+    text-align: center;
+    border: 1px solid #382f1e;
+    border-radius: 20px; /* You can use your preferred value */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons-container .icons img {
+    height: 7rem;
+    
+}
+
+.icons-container .icons h3 {
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    color: var(--main-color);
+}
+
+.brown{
+    color: #382f1e;
+}
+
+/* review */
+.review {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+}
+
+.review-slider {
+    flex: 1; 
+    box-sizing: border-box; 
+    padding: 1.5rem; 
+}
+
+.review-slider .box {
+    border: var(--border);
+    border-radius: var(--border-radius);
+    text-align: center;
+    position: relative;
+    z-index: 0;
+    padding: 2rem;
+    box-sizing: border-box; 
+}
+
+.review-slider .box img {
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    margin-bottom: .7rem;
+}
+
+.review-slider .box .stars {
+    padding: .5rem 0;
+}
+
+.review-slider .box .stars i {
+    font-size: 1.7rem;
+    color: var(--main-color);
+}
+
+.review-slider .box p {
+    font-size: 1.6rem;
+    color: var(--main-color);
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+
+.review-slider .box h3 {
+    font-size: 2.2rem;
+    color: var(--main-color);
+    line-height: 1.8;
+}
+
+.review-slider .box span {
+    font-size: 1.5rem;
+    color: var(--main-color);
+}
+
+.seeall {
+    text-align: center;
+    margin-top: 2rem;
+    z-index: 1;
+}
+
+.seeall a {
+    text-decoration: none;
+}
+
+.seeall p {
+    font-size: 1.2rem;
+    color: #555;
+    margin: 0;
+}
+
+.seeall p:hover {
+    text-decoration: underline;
+}
+
+
+.intro4 {
+    background-color: #fdfce9; /* Set your desired background color */
+    margin-top: 150px;
+    text-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    font-size: larger;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-align: Center;
+	text-align-last: justified;
+    z-index: 0;
+}
+.fot2 {
+    background-color: #fdfce9;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    margin-top: auto;
+    font-size: 150%;
+    z-index: 1;
+    margin-top: 6%;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .3);
+}
+.sign1 image{
+    border: none;
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+} 
+  
+
+  
+  .sign2 {
+	flex: 1; /* Takes up available space */
+    padding: 10px; /* Adjust as needed for spacing between text and image */
+    font-size: 200%;
+    z-index: 1;
+    text-align: justified;
+	text-align-last: center;
+    background-color: #fdfce9;
+  }	
+    #coffeeVeinsIntro {
+    margin-top: 100px;
+    margin-inline: 5%;
+    text-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    font-size: larger;
+    display: flex;
+    justify-content: space-between; /* Adjust as needed */
+    z-index: 0;
+}
+
+#coffeeVeinsIntro .sign3 {
+    max-width: 800px; /* Adjust max-width as needed */
+    margin: auto; /* Center-align the container */
+}
+
+#coffeeVeinsIntro .sign3 p {
+    font-size: 200%; /* Adjust font size as needed */
+    color: black;
+    margin-bottom: 1em; /* Add space between paragraphs */
+    text-align: justify; /* Add this line to justify text */
+    text-align-last: center; /* Center-align the last line within justified text */
+}
+/* Add this CSS for responsiveness */
+
+
+    .img .intro4 .sign1 {
+        order: 2; /* Change the order to make it come after sign2 */
+    }
+
+    .intro4 .sign1 img {
+        width: 100%; /* Make the image responsive */
+        height: auto;
+    }
+
+   .intro4 .sign2 {
+        text-align: center;
+        padding: 20px;
+        order: 1; /* Change the order to make it come before sign1 */
+    }
+
+    #coffeeVeinsIntro {
+        margin-top: 50px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #coffeeVeinsIntro .sign3 {
+        max-width: 100%;
+    }
+
+    .footer {
+        padding: 10px;
+    }
+
+/* Add this CSS for mobile side navigation */
+.mobile-menu {
+    display: none;
+}
+
+#menu-btn {
+    font-size: 3rem;
+    color: var(--main-color);
+    cursor: pointer;
+    display: initial;
+    margin-right: 10px;
+}
+
+.mobile-menu-content {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.mobile-menu-content.active {
+    transform: translateX(0);
+}
+
+.mobile-menu-content a {
+    font-size: 2rem;
+    margin: 10px;
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+.mobile-menu-content a:hover {
+    text-decoration: underline;
+}
+
+
+.seeall {
+    position: relative;
+    z-index: 1;
+    padding-bottom: 20rem;
+    
+}
+
+.dropdown {
+    display: inline-block;
+    margin-left: 10px; /* Adjust the margin as needed */
+    
+}
+
+.dropbtn {
+    padding: 10px;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+    background-color: #382f1e;
+    color: #ffffff;
+    border-radius: 20px;
+    transition: background-color 0.3s ease-in-out;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1.1;
+    margin-right: 0%;
+    margin-top: 5%;
+    max-width: 270px;
+}
+
+.dropbtn:hover {
+    color: #fdfce9;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1.5;
+    border-radius: 10%;
+    
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #fdfce9;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.stars {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .header {
+        padding-right: 2%;
+        padding-left: 2%;
+    }
+
+    .header .logo {
+        font-size: 1.5rem;
+    }
+
+    .header .navbar a {
+        font-size: 1.2rem;
+    }
+
+    .intro,
+    .intro2,
+    .intro4,
+    #coffeeVeinsIntro {
+        margin-inline: 2%;
+        font-size: 0.9rem;
+    }
+
+    .text1,
+    .text2,
+    .img1 img,
+    .img2 img {
+        margin-left: 0;
+    }
+
+    .btn {
+        font-size: 1.2rem;
+    }
+
+    .footer {
+        margin-top: 5%;
+    }
+
+    .mobile-menu-content {
+        font-size: 1.2rem;
+    }
+
+    .dropbtn {
+        font-size: 1rem;
+    }
+}
+
+.contactus{
+    font-size: 1rem;
+}
+
+.slideshow-container {
+    z-index: 1;
+    max-width: 40%;
+    position: relative;
+    margin: 0 20%;
+    max-height: 40%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+}
+
+/* Style for the slides */
+
+
+.mySlides img {
+
+    width: 90%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Style for navigation dots */
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #717171;
+}
+/**/
+* {box-sizing: border-box}
+
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+    background-color: white;
+    max-width: 50%;
+    position: relative;
+    margin: auto;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2); /* Increased shadow size */
+  }
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 480px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+.desc{
+    display: flex;
+    margin:2%;
+}
+.desc p{
+    font-size: 30px;
+    z-index: inherit;
+    display: block;
+}
+
+#customer-testimonials {
+    background-color: #fce6cf;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+#customer-testimonials h1 {
+    color: #4d4d4d;
+    text-align: center;
+}
+
+#customer-testimonials h3 {
+    color: #666666;
+    text-align: center;
+}
+
+#customer-testimonials p {
+    color: #333333;
+}

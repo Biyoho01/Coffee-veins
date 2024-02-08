@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee</title>
+
+  
+
+    
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+<header class="header">
+        
+
+        <a href="#" class="logo">
+           <p style="letter-spacing: 10px"> coffee veins</p>
+            <img src="logo1.jpg" alt="Coffee Veins Logo" class="logo-image">
+            
+          </a>
+        <nav class="navbar">
+            <a href="index.html">home</a>
+            <a href="menu.html">menu</a>
+            <a href="about.html">about</a>
+            <a href="#review">reviews</a>
+            <a href="#footer">contact us</a>
+
+            
+        </nav>
+
+        
+    </header>
+    
+    <div class="intro">
+        
+        <div class="text1">
+            <p>Coffee Veins is inspired by the Japanese minimalist cafes. We offer and serve carefully alchemized delightful coffee drinks that vary in flavors and blends. These can also be paired with our appetizing pastas and pastries on the menu!</p>
+            <div class="icons-container">
+                <div class="icons">
+                    <img src="image icons/about-icon-1.png" alt="">
+                    <h3>quality coffee</h3>
+                </div>
+                <div class="icons">
+                    <img src="image icons/about-icon-2.png" alt="">
+                    <h3>Convenient Branch Locations</h3>
+                </div>
+                <div class="icons">
+                    <img src="image icons/about-icon-3.png" alt="">
+                    <h3>Quick Service</h3>
+                </div>
+            </div>
+            <a href="menu.html" class="btn">Get Yours now</a>
+        </div>
+        <div class="img1">
+            <img src="coffee1.jpg" alt="Coffee Image">
+            
+        </div>
+        
+    </div>
+    
+    <div class="intro2">
+        <div class="img2">
+            <img src="coffee2.jpg" alt="Coffee Image">
+        </div>
+        <div class="text2">
+            
+            <p>
+                From steaming hot coffees to frosty frappes, we boast a diverse spectrum of coffee creations that cater to all preferences. Whether you crave the comforting warmth of a freshly brewed cup or the cool, invigorating vibes of an icy frappe, our menu is a testament to the artistry of coffee craftsmanship.</p>
+                <a href="menu.html" class="btn">Get Yours now</a>
+        </div>
+        
+    </div>
+
+        </div>
+        <center><p style="letter-spacing: 10px; font-size: 34px; margin-top: 40px; z-index: 1;" >REVIEWS</p></center>
+            <div class="review">
+        <div class="swiper review-slider" id="review">
+            
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    
+                    <img src="image icons/pic-1.png" alt=""><br>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, earum quis dolorem quaerat tenetur
+                        illum.</p>
+                    <h3>Customer 1</h3>
+                    <span>satisfied client</span>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="swiper review-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    
+                    <img src="image icons/pic-1.png" alt=""><br>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, earum quis dolorem quaerat tenetur
+                        illum.</p>
+                    <h3>Customer 2</h3>
+                    <span>satisfied client</span>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="swiper review-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    
+                    <img src="image icons/pic-1.png" alt=""><br>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, earum quis dolorem quaerat tenetur
+                        illum.</p>
+                    <h3>Customer 3</h3>
+                    <span>satisfied client</span>
+                </div>
+                <br>
+                
+            </div>
+        </div>
+    </div>
+</div>
+<div class="seeall">
+    <a href="review.html">
+        <p> See all reviews (20)</p>
+    </a>
+    <div class="dropdown">
+        <button class="dropbtn">Select Star Rating</button>
+        <div class="dropdown-content">
+            <a href="#" onclick="filterByStars(1)">5 star  <div class="stars">
+              
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div></a>
+            <a href="#" onclick="filterByStars(2)">4 stars  <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                
+            </div></a>
+            <a href="#" onclick="filterByStars(3)">3 stars  <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                
+            </div></a>
+            <a href="#" onclick="filterByStars(4)">2 stars  <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                
+                
+            </div></a>
+            <a href="#" onclick="filterByStars(5)">1 stars  <div class="stars">
+                <i class="fas fa-star"></i>
+           
+            </div> </a>
+        </div>
+    </div>
+</div>
+
+    
+        <section class="footer" id="footer">
+            <div class="social-icons">
+                <label for="fb" class="Contactus">For more information Contact Us:</label><br>
+                <div class="icon logo" style="justify-content: space-around;">
+                    <a href="https://www.facebook.com/coffeeneitors" target="_blank">
+                        <p>Facebook</p><img src="image icons/FB Logo.png" alt="Facebook Logo" width="50px" height="50px">
+                    </a>
+                    <a href="#contact"> <!-- Updated this line to link to the "Contact Us" section -->
+                        <p>Location</p><img src="image icons/about-icon-2.png" alt="Location Icon" width="50px" height="50px">
+                    </a>
+                </div>
+            </div>
+    
+            <div class="footer-info">
+                <p>Created by GHANA group | All rights reserved</p>
+            </div>
+        </section>
+    
+  
+    
+     
+    </body>
+   
+      </script>
+    </html>
+
